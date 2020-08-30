@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import Layout, { siteTitle } from '../components/layout'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -18,4 +19,14 @@ export default function Home() {
       </section>
     </Layout>    
   )
+}
+
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
