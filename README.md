@@ -14,3 +14,9 @@ Next.jsは自動的にコードを分割してくれるので、各ページは�
 
 Next.jsは画像などのstaticファイルは、トップレベルに`public`フォルダに置くことでサービングすることができる。
 `robots.txt`に対しても機能する。
+
+## CSS
+
+すでに`pages/index.js`はスタイリングされていて、[styled-jsx](https://github.com/vercel/styled-jsx)というライブラリを使っている。これはReact Componentの中にCSSを書くことができるというもの。React Componentに書かれたCSSは、他のコンポーネントに影響しません。
+
+Next.jsは[styled-jsx](https://github.com/vercel/styled-jsx)をビルトインでサポートしているが、[styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)や[emotion](https://github.com/vercel/next.js/tree/canary/examples/with-emotion)というのも使うことができる。
