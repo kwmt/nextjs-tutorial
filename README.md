@@ -23,3 +23,14 @@ Next.jsは[styled-jsx](https://github.com/vercel/styled-jsx)をビルトイン�
 
 ### CSS Moduleを使う
 `.module.css`というsufixをつけたファイルを`components`フォルダに作成
+
+すべてのページであるCSSを読み込ませたい場合も対応
+
+グローバルなCSSファイルを読み込ませるには、`pages/_app.js` ファイルを作成
+
+
+## SSR（Server-side Rendering）
+Server-side Renderingを使うためには、`getStaticProps`の代わりに`getServerSideProps`を使う。
+
+
+リクエスト時にデータを取得しなければならないページをプリレンダーする必要がある場合にのみ、 `getServerSideProps` を使用してください。
