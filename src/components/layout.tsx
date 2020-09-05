@@ -1,7 +1,8 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 import styles from 'src/components/layout.module.scss'
 import utilStyles from 'src/styles/utils.module.scss'
-import Link from 'next/link'
 
 const name = 'Your Name'
 export const siteTitle = 'Next.js Sample Website'
