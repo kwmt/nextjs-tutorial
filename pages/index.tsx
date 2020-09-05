@@ -3,7 +3,7 @@ import Link from 'next/link'
 import utilStyles from '../styles/utils.module.scss'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
-import Date from '../components/date/date'
+import Date from '../components/molecules/date/date'
 import { GetStaticProps } from 'next'
 
 export default function Home({ allPostsData } : {
