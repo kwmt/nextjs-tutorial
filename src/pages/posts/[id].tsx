@@ -1,9 +1,10 @@
-import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
-import Date from '../../components/date/date'
-import utilStyles from '../../styles/utils.module.scss'
 import { GetStaticPaths, GetStaticProps } from "next";
+
+import Date from 'src/components/molecules/date/date'
+import Layout from "src/components/layout";
+import { getAllPostIds, getPostData } from "src/lib/posts";
+import utilStyles from 'src/styles/utils.module.scss'
 
 export default function Post({
     postData
